@@ -34,7 +34,7 @@ public class LoginServlet extends HttpServlet {
                 out.println("Succesful login.");
                 response.sendRedirect("index.jsp");
             } else {
-                response.sendRedirect("loginincorrect.jsp");
+                response.sendRedirect("loginFailed.jsp");
             }
         } catch (SQLException sqle) {
             sqle.printStackTrace();
