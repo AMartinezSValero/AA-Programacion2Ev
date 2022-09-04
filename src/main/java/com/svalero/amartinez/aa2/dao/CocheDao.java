@@ -51,16 +51,16 @@ public class CocheDao {
         return coches;
     }
 
-    private Coche fromResultSet(ResultSet resulset) throws SQLException {
+    private Coche fromResultSet(ResultSet resultSet) throws SQLException {
         Coche coche = new Coche();
-        coche.setIdCoche(resulset.getInt("id_coche"));
-        coche.setModelo(resulset.getString("modelo"));
-        coche.setPotencia(resulset.getDouble("potencia"));
-        coche.setColor(resulset.getString("color"));
-        coche.setDescripcion(resulset.getString("descripcion"));
-        coche.setPrecio(resulset.getDouble("precio"));
+        coche.setIdCoche(resultSet.getInt("id_coche"));
+        coche.setModelo(resultSet.getString("modelo"));
+        coche.setPotencia(resultSet.getDouble("potencia"));
+        coche.setColor(resultSet.getString("color"));
+        coche.setDescripcion(resultSet.getString("descripcion"));
+        coche.setPrecio(resultSet.getDouble("precio"));
         MarcaDao marcaDao = new MarcaDao(connection);
-        int idMarca = resulset.getInt("id_marca");
+        int idMarca = resultSet.getInt("id_marca");
         Marca marca = marcaDao.findById(idMarca).get();
         coche.setMarca(marca);
         return coche;
