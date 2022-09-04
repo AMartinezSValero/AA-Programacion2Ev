@@ -21,7 +21,7 @@
 <html>
 <head>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/ada.css">
+  <link rel="stylesheet" href="css/styles.css">
   <script src="https://kit.fontawesome.com/cc976dc165.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -57,7 +57,7 @@
       %>
       <!--TODO arreglar listado-->
       <li class="list-group-item" style="width: 50% ! important">
-        <a target="_blank" href="coche.jsp?idcoche=<%= coche.getIdCoche() %>"><%= coche.getModelo() %></a>
+        <a target="_blank" href="detalleCoche.jsp?idcoche=<%= coche.getIdCoche() %>"><%= coche.getModelo() %></a>
         <p><%= coche.getMarca().getNombre() %> - <%= coche.getColor() %> | <%= coche.getPrecio() %> </p>
       </li>
       <%
@@ -77,7 +77,7 @@
           for (Coche coche: coches) {
       %>
       <li class="list-group-item" style="width: 50% ! important">
-        <a target="_blank" href="coche.jsp?idcoche=<%= coche.getIdCoche() %>"><%= coche.getModelo() %></a>
+        <a target="_blank" href="detalleCoche.jsp?idcoche=<%= coche.getIdCoche() %>"><%= coche.getModelo() %></a>
         <p><%= coche.getMarca().getNombre() %> - <%= coche.getColor() %> | <%= coche.getPrecio() %> </p>
       </li>
       <%
