@@ -44,7 +44,7 @@
                 <h5 class="card-title"><%= marca.getNombre() %></h5>
                 <img src="logos/<%= marca.getLogo() %>" class="card-img-top"  class="card-img-top" alt="imagen" style="margin-bottom:20px ! important; width:310px ! important; height:230px ! important">
                 <h6 class="card-text"><%= marca.getDescripcion()  %></h6>
-                <a href="zapatospormarca.jsp?id=<%= marca.getIdMarca() %>" class="btn btn-warning">See shoes</a>
+                <a href="marcasDetalle.jsp?id=<%= marca.getIdMarca() %>" class="btn btn-warning">See shoes</a>
             </div>
         </div>
     </div>
