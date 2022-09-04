@@ -8,6 +8,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 public class CocheDao {
@@ -26,6 +27,20 @@ public class CocheDao {
         PreparedStatement statement = connection.prepareStatement(sql);
         statement.setString(1, "%" + searchText + "%" );
         statement.setString(2, "%" + searchText + "%" );
+        ResultSet resultSet = statement.executeQuery();
+        while (resultSet.next()) {
+            Coche coche = fromResultSet(resultSet);
+            coches.add(coche);
+        }
+
+        return coches;
+    }
+
+    public List<Coche> findAll() throws SQLException {
+        String sql = "SELECT * FROM COCHES ORDER BY modelo";
+        List<Coche> coches = new ArrayList<>();
+
+        PreparedStatement statement = connection.prepareStatement(sql);
         ResultSet resultSet = statement.executeQuery();
         while (resultSet.next()) {
             Coche coche = fromResultSet(resultSet);
