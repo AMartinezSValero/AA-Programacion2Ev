@@ -35,7 +35,7 @@
 <main class="form-signin">
     <form method="post" action="login">
         <img class="mb-4" src="logos/logo.png" >
-        <h1 class="h3 mb-3 fw-normal">Login</h1>
+        <h1 class="h3 mb-3 fw-normal">Acces Your Account</h1>
 
         <div class="form-floating">
             <input type="text" name="email" class="form-control" id="floatingInput" placeholder="Email" value="cars@cars.com">
