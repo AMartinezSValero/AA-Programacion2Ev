@@ -29,7 +29,7 @@
 <body>
 <jsp:include page="header.jsp" />
 <div class="container" style="text-align:center ! important">
-    <h3>Navigate between the brands to choose the best shoe for your feet.</h3>
+    <h3>Navigate between the brands to choose the car you wanna rate.</h3>
     <%
         Database database = new Database();
         MarcaDao marcaDao = new MarcaDao(database.getConnection());
@@ -44,7 +44,7 @@
                 <h5 class="card-title"><%= marca.getNombre() %></h5>
                 <img src="logos/<%= marca.getLogo() %>" class="card-img-top"  class="card-img-top" alt="imagen" style="margin-bottom:20px ! important; width:310px ! important; height:230px ! important">
                 <h6 class="card-text"><%= marca.getDescripcion()  %></h6>
-                <a href="marcasDetalle.jsp?id=<%= marca.getIdMarca() %>" class="btn btn-warning">See shoes</a>
+                <a href="marcasDetalle.jsp?id=<%= marca.getIdMarca() %>" class="btn btn-warning">See Cars</a>
             </div>
         </div>
     </div>

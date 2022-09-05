@@ -35,12 +35,12 @@
 
     <div class="card">
         <div class="card-header">
-            Shoes
+            Cars
         </div>
         <div class="card-body">
-            <h5 class="card-title">Display all available shoes</h5>
-            <p class="card-text">All your favorite shoes from your favorite brands are available here.</p>
-            <a href="coches.jsp" class="btn btn-warning">See shoes</a>
+            <h5 class="card-title">Display all registered cars</h5>
+            <p class="card-text">All your favorite cars from the most prestigious brands are available here to rate.</p>
+            <a href="coches.jsp" class="btn btn-warning">See Cars</a>
         </div>
     </div>
 
@@ -50,7 +50,7 @@
         </div>
         <div class="card-body">
             <h5 class="card-title">Display all available brands</h5>
-            <p class="card-text">All your favorite shoe brands all around the world are available for you.</p>
+            <p class="card-text">All your favorite car brands all around the world are available for you.</p>
             <a href="marcas.jsp" class="btn btn-warning">See brands</a>
         </div>
     </div>

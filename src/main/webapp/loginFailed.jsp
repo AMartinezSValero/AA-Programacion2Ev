@@ -61,7 +61,7 @@
         </div>
 
         <a class="w-200 btn btn-lg btn-warning" href="userregister.jsp">Don't have an account? Create one here</a>
-        <p class="mt-5 mb-3 text-muted">Shoes and Sneakers for Fussy Feet</p>
+        <p class="mt-5 mb-3 text-muted">The most beautiful car is the one that we still have to do</p>
     </form>
 </main>
 </body>
