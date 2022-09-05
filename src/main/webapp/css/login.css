@@ -10,7 +10,26 @@ body {
     padding-top: 40px;
     padding-bottom: 40px;
 }
-
+h1 {
+    color: black;
+    font-size: 40px;
+    justify-content: center;
+}
+p {
+    color: black;
+    font-size: 25px;
+    justify-content: center;
+}
+.text-muted a{
+    -bs-text-opacity: 1;
+    color: black;
+    font-size: 25px;
+}
+.btn-warning {
+    color: #000;
+    background-color: #ddd9cf;
+    border-color: #8f8b81;
+}
 img{
     width: 100%;
     margin: auto;

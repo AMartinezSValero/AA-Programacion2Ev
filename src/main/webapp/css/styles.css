@@ -13,17 +13,35 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     width: auto;
+    background-color: gray;
 }
 
+.container {
+    width: 100%;
+    max-width: 1100px;
+    padding: 60px;
+    margin: auto;
+    overflow: hidden;
+    justify-content: center;
+    position: relative;
+    background-color: #808080;
+}
 .contenedor {
     width: 90%;
     max-width: 1100px;
     padding: 60px;
     margin: auto;
     overflow: hidden;
+    justify-content: center;
     position: relative;
-    background-color: #FFF;
+    background-color: #808080;
 }
+.btn-warning {
+    color: #000;
+    background-color: #ddd9cf;
+    border-color: #8f8b81;
+}
+
 
 .contenedor-negro {
     background-color: #333;
@@ -144,7 +162,7 @@ a.boton:hover {
 
 .logo img {
     display: block;
-    width: 80px;
+    width: 150px;
     height: 80px;
     align-self: flex-start;
     margin-bottom: 10px;
@@ -152,9 +170,13 @@ a.boton:hover {
 }
 
 .enlaces {
-    align-self: flex-end;
-    padding-bottom: 20px;
-    display: inline-block;
+
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    /*Para separar los enlaces del menu y que no se queden pegados*/
+    padding: 50px 50px;
 }
 
 .enlaces a {
@@ -227,7 +249,7 @@ a.boton:hover {
 }
 
 .beneficios-bloque .boton:hover {
-    background-color: #EFC026;
+    background-color: rgba(16, 17, 17, 0.35);
     color: #FFF;
     border: 1px solid #EFC026;
 }
