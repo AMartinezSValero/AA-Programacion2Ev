@@ -49,7 +49,7 @@
         <button class="w-100 btn btn-lg btn-warning" type="submit">Login</button>
         <br><br><br>
         <a class="w-200 btn btn-lg btn-warning" href="userregister.jsp">Don't have an account? Create one here</a>
-        <p class="mt-5 mb-3 text-muted"> The most beautiful car is the one that we still have to do. </p>
+        <p class="mt-5 mb-3 text-muted"> The most beautiful car is the one that we still have to do </p>
     </form>
 </main>
 </body>

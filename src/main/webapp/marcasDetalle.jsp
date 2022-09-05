@@ -29,7 +29,7 @@
 <body>
 <jsp:include page="header.jsp" />
 <div class="container">
-    <h2>All available shoes of your favorite brand.</h2>
+    <h2>All available cars of this brand.</h2>
 
     <ul class="list-group">
         <%

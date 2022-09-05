@@ -105,7 +105,7 @@
         </div>
         <input type="hidden" name="idUsuario" value="<%=currentUser.getIdUsuario()%>">
         <input type="hidden" name="idcoche" value="<%=cocheID%>">
-        <button type="submit" class="btn btn-warning">Modify Review</button>
+        <!--button type="submit" class="btn btn-warning">Modify Review</button-->
     </form>
     <div id="result1"></div>
 
